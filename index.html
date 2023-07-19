@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz App</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <div id="start">
+      <h1 class="heading">Quiz App</h1>
+      <div class="start-display">
+        <button class="btn play" id="play-btn">Play</button>
+      </div>
+    </div>
+
+    <div id="settings" class="hide"> 
+      <label for="category">Select Category:</label>
+            <select id="category">
+                <option value="computer">Computer</option>
+                <option value="sports">Sports</option>
+                <option value="history">History</option>
+                <option value="geography">Geography</option>
+            </select>
+        <label for="level">Slect Level:</label>
+            <select id="level">
+                <option value="easy">easy</option>
+                <option value="medium">medium</option>
+                <option value="hard">hard</option>
+            </select>
+        <button class="btn" id="start-btn">Start</button>
+    </div>
+    
+    <div id="quiz" class="hide">
+      <div class="header">
+        <div class="number-of-count">
+            <span class="number-of-question"></span>
+        </div>
+        <div class="timer-div">
+            <img src="http://uxwing.com/wp-content/themes/uxwing/download/time-and-date/stopwatch-icon.png" width="20px">
+            <span class="time-left">30s</span>
+        </div>
+    </div>
+      <div class="question-wrapper">
+        <div id="question">This is a question</div>
+        <ul id="choices"></ul>
+        <div id="feedback"></div>
+        <button class="btn"id="submit" disabled>Submit</button> 
+        <footer id="footer">
+          <button class="button" id="previous">Previous</button> 
+          <button class="button" id="next">Next</button> 
+        </footer>
+      </div>   
+    </div>
+
+    <div id="end-screen" class="hide">
+      <h1 class="heading">Quiz App</h1>
+      <div class="score">
+          <span class="score-text">Your Score:</span>
+          <div>
+              <span class="final-score">0</span>
+          </div>
+      </div>
+      <footer id="footer">
+          <button class="button" id="restart-btn">Restart</button>
+          <button class="button" id="menu-btn">Menu</button>          
+      </footer>
+    </div>
+
+    
+
+  </div>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
